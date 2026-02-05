@@ -1,0 +1,200 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GharSaathi – Har Ghar Ka Digital Saathi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --blue:#1e3a8a;
+  --green:#22c55e;
+  --light:#f1f5f9;
+  --dark:#0f172a;
+  --card:#ffffff;
+}
+
+*{box-sizing:border-box;font-family:Segoe UI, sans-serif;}
+
+body{
+  margin:0;
+  background:linear-gradient(135deg,#1e3a8a,#22c55e);
+  color:#111;
+}
+
+header{
+  padding:15px;
+  text-align:center;
+  color:white;
+  font-size:22px;
+  font-weight:600;
+}
+
+.container{
+  padding:15px;
+}
+
+.card{
+  background:var(--card);
+  border-radius:16px;
+  padding:15px;
+  margin-bottom:15px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+h2{
+  margin:0 0 10px;
+  color:var(--blue);
+}
+
+input,select{
+  width:100%;
+  padding:10px;
+  margin:5px 0;
+  border-radius:10px;
+  border:1px solid #ccc;
+}
+
+button{
+  background:var(--blue);
+  color:white;
+  border:none;
+  padding:10px;
+  width:100%;
+  border-radius:12px;
+  font-size:16px;
+  margin-top:10px;
+  cursor:pointer;
+}
+
+button:hover{background:#162f6b;}
+
+.small{
+  font-size:13px;
+  color:#555;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.list{
+  background:#f8fafc;
+  padding:10px;
+  border-radius:10px;
+  margin-top:5px;
+}
+
+footer{
+  text-align:center;
+  padding:10px;
+  font-size:13px;
+  color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>🏠 GharSaathi</header>
+
+<div class="container">
+
+<!-- PROFILE -->
+<div class="card">
+<h2>👤 House Profile</h2>
+<input placeholder="House Name">
+<input placeholder="City">
+<select>
+<option>Total Family Members</option>
+<option>1</option><option>2</option><option>3</option><option>4+</option>
+</select>
+</div>
+
+<!-- FAMILY -->
+<div class="card">
+<h2>👨‍👩‍👧 Family Members</h2>
+<input placeholder="Name">
+<select>
+<option>Relation</option>
+<option>Father</option><option>Mother</option><option>Son</option><option>Daughter</option>
+</select>
+<input placeholder="Blood Group">
+<input type="date">
+<button>Add Member</button>
+<div class="list small">No members added yet</div>
+</div>
+
+<!-- BILLS -->
+<div class="card">
+<h2>💡 Bills & Payments</h2>
+<input placeholder="Bill Type (Electricity / Gas)">
+<input placeholder="Amount ₹">
+<input type="date">
+<button>Add Bill</button>
+<div class="list small">No bills added</div>
+</div>
+
+<!-- DOCUMENTS -->
+<div class="card">
+<h2>📄 Documents Vault</h2>
+<input placeholder="Document Name">
+<input placeholder="Holder Name">
+<input type="date">
+<button>Save Document</button>
+<div class="list small">Secure & Private</div>
+</div>
+
+<!-- HEALTH -->
+<div class="card">
+<h2>💊 Health & Medicine</h2>
+<input placeholder="Medicine Name">
+<select>
+<option>Time</option>
+<option>Morning</option>
+<option>Night</option>
+<option>Both</option>
+</select>
+<input placeholder="For Whom">
+<button>Add Medicine</button>
+<div class="list small">Medicine reminders active</div>
+</div>
+
+<!-- APPLIANCES -->
+<div class="card">
+<h2>🏠 Home Appliances</h2>
+<input placeholder="Appliance Name">
+<input placeholder="Brand">
+<input type="date">
+<button>Add Appliance</button>
+<div class="list small">Service reminders enabled</div>
+</div>
+
+<!-- EMERGENCY -->
+<div class="card" style="border:2px solid red;">
+<h2>🚨 Emergency Mode</h2>
+<p class="small">One tap access for emergency</p>
+<button style="background:red;">SOS CALL</button>
+</div>
+
+<!-- DASHBOARD -->
+<div class="card">
+<h2>📊 Monthly Summary</h2>
+<ul class="small">
+<li>Total Bills: ₹0</li>
+<li>Upcoming Payments: None</li>
+<li>Health Alerts: None</li>
+<li>Services Due: None</li>
+</ul>
+</div>
+
+</div>
+
+<footer>
+GharSaathi © 2026<br>
+Har Ghar Ka Digital Saathi ❤️
+</footer>
+
+</body>
+</html>
